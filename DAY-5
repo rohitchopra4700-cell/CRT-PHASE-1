@@ -1,0 +1,111 @@
+//   problem 1 
+//  pattern Printing 
+#include <iostream>
+
+  using namespace std ;
+  
+
+     int main() {
+//  upper  triangle 
+   for ( int  i = 1 ; i <= 5 ; i ++ ) {
+       for ( int j = 1 ; j <= i ;  j++){
+           cout << " * " ;
+       }
+            cout<<"\n";
+       
+   }
+    
+    
+    
+    //  lower triangle 
+       for ( int i = 5 - 1  ; i >= 1; i -- ){
+            for ( int j = 1 ; j <= i ; j++){
+                cout<<" * ";
+                
+            }
+            cout<<"\n";
+       }
+}
+................................................................................
+//    program 3 
+     functions with some values and some values and some return values 
+    
+    # include <iostream> 
+       
+      using namespace std ;
+           
+           
+            int main () {
+                int a =  10 ;
+                int b = 5;
+                 int area = calculateArea(a , b);
+                 cout << area ;
+                 
+            } 
+            
+              
+  ........................................................            
+            //    program 4.2 -- arrugemnt , no return type 
+              # include <iostream>
+                using namespace std ;
+                 void sendMessage( string message ) { 
+                     cout << message;
+                 }
+                   
+                    int main () { 
+                        sendMessage(" BJP  wons...");\
+                    }
+        ..................................         //  program 4.3  -- NO  arrugemnt   , Return values 
+                      # include <iostream>
+                      using namespace std ;
+                        
+                        int ticketNumber(){
+                             return 101 ;
+                        }
+                          int main () { 
+                              cout << ticketNumber () ;
+                        } 
+                  .................................................  
+                     4.4 --  arrugemnt , Return values 
+                    
+                    
+                    # include <iostream>
+                     using namespace std ; 
+                        
+                        
+                     float currencyConvertor( float  rupees ) {
+                          return rupees / 95.25 ; 
+                     }
+                      int main () {
+                            cout << currencyConvertor(200);
+                       
+                      }
+                       
+            .................................................. ,          
+                       program 5 
+                    //  function overloading 
+                    
+                      # include <iostream>
+                       using namespace std ;
+                         
+                         int add( int a,int b ){
+                              return a + b  ;
+                         }
+                        
+                    
+                int add( int a,int b, int c ){
+                              return a + b  + c;
+                         }
+                           int main(){ 
+                               cout << add(5,2) << "\n";
+                               cout << add(5,2,3) << "\n";
+                             
+                         }
+                         
+                       
+                       
+                       
+                      
+                                      
+
+
