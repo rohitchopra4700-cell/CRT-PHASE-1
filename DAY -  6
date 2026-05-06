@@ -1,0 +1,125 @@
+//  Problem 1 
+//  coffee billing system 
+
+#include <iostream>
+     using namespace std ;
+      
+       int coffeePrice( int amount ){
+            
+             return amount*30;
+             
+       }
+       
+
+int main() {
+    int coffee;
+    cout<<" Enter the number of the coffee do you want :" ;
+    cin>>coffee;
+    cout<<coffeePrice(coffee);
+    
+    
+  
+
+
+    return 0;
+}
+
+.............................................................................................
+  program 2 
+//  store discount application  // 
+//  find 10% -- amount * 0.10 
+//   discount amount --  amount -- amount - 10% vala amount 
+
+     # include <iostream>
+      using namespace std ;
+         
+         
+          float discount ( float amount ) {
+            float finalamount = amount * 0.1;
+             return amount - finalamount ;
+          }
+               int main (){
+                    cout<<" the final price is  : ";
+                    cout<<discount(100); 
+               }
+-------------------------------------------------------------------------------
+  //   problem  4 
+    //  pointers
+    //  Declaration , Initialization , Arithmetic operation throught pointers 
+     int main (){
+          int a  = 10;
+          int *prt1 = &a;
+           
+           
+            int b = 20;
+            int *prt2 = &b;
+            
+            // int c = a + b;
+            int c = *prt1 + *prt2;
+             cout << c;
+     }
+------------------------------------------------------------------------------------------
+
+ //    problem --5 
+    //  swapping of 2 variables value using pointer and using function 
+     
+     
+        void swapNumber(int *ptr1  , int *ptr2){
+            int temp = *ptr1;
+            *ptr1 = *ptr2;
+            *ptr2 = temp;
+        }
+            int main (){ 
+                int a , b ;
+                 cin >> a ;
+                 cin >> b;
+                 swapNumber(&a, &b);
+                  cout << a << " " << b;
+            }  
+        --------------------------------------------------------------------------------------------------
+
+  //  problem -- 6 
+        //    classes / objects 
+            class Student {
+                
+                public:
+                
+                 string name ;
+                 int age ;
+                 
+                void introduce (){
+                     cout << " Hi there , this person name is " << name  << " and his age is  " << age << "\n";
+
+              }
+            };
+                int main (){
+                    Student s1 ;
+                    s1.name = "Abhishek";
+                    s1.age =  24;
+                     
+                     
+                     s1.introduce();
+                }
+                  
+        ---------------------------------------------------------------------
+  // Access specifier 
+                // types --- 7,1 -- public 
+                //           7.2 --- private 
+                //           7.3 -- protected 
+                
+                    //  7.1 -- public
+                    
+                    
+                       class publicPark{
+                           public:
+                            void enter(){
+                                cout << " Anyone can enter in the park ....";
+                                
+                                
+                            }
+                       };
+                         int main (){
+                             publicPark p  ;
+                             p.enter ();
+                         }
+        
